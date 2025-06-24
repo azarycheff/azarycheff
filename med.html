@@ -7,113 +7,14 @@
 
   <!-- используем Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link rel="icon" href="logo.svg" type="image/svg+xml">
+  <link rel="icon" href="logo.svg" type="image/svg+xml" />
 
   <!-- Файл стиля -->
   <link rel="stylesheet" href="styles.css" />
+  
   <!-- шрифт -->
-  <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua&display=swap" rel="stylesheet" />
 
-  <style>
-    /* Карточки лекарств */
-    .meds-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-
-    .med-card {
-      background: white;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      display: flex;
-      flex-direction: column;
-      overflow: hidden;
-      transition: transform 0.2s ease;
-    }
-    .med-card:hover {
-      transform: translateY(-5px);
-    }
-
-    .med-card img {
-      width: 100%;
-      height: 140px;
-      object-fit: cover;
-    }
-
-    .med-card-body {
-      padding: 15px;
-      flex-grow: 1;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-
-    .med-card-title {
-      font-size: 18px;
-      font-weight: bold;
-      margin: 0 0 8px;
-      color: #333;
-      font-family: 'Inknut Antiqua', serif;
-    }
-
-    .med-card-desc {
-      font-size: 14px;
-      color: #666;
-      margin-bottom: 12px;
-      flex-grow: 1;
-      font-family: Arial, sans-serif;
-    }
-
-    .med-card-price {
-      font-size: 16px;
-      font-weight: 600;
-      color: #000;
-      margin-bottom: 12px;
-    }
-
-    /* Новый стиль для кнопки в виде summary */
-    details.azlab2_buy_wrapper {
-      user-select: none;
-    }
-
-    details summary.azlab2_btn_buy {
-      background-color: #0275D8;
-      color: white;
-      border: none;
-      border-radius: 4px;
-      padding: 10px;
-      font-size: 16px;
-      cursor: pointer;
-      list-style: none;
-      width: fit-content;
-      /* Чтобы ширина кнопки по содержимому */
-    }
-
-    details summary.azlab2_btn_buy:hover {
-      background-color: #025bb5;
-    }
-
-    details[open] > div.azlab2_buy_message {
-      margin-top: 10px;
-      padding: 10px;
-      background-color: #f8d7da;
-      color: #721c24;
-      border-radius: 4px;
-      font-family: Arial, sans-serif;
-      font-size: 14px;
-    }
-
-    /* Убираем стрелочку у summary */
-    details summary::-webkit-details-marker {
-      display: none;
-    }
-    details summary::marker {
-      content: "";
-    }
-  </style>
 </head>
 <body class="az_bdy d-flex flex-column min-vh-100">
 
@@ -126,7 +27,7 @@
         <h1 class="h5 m-0 az_logo_text">Аптека 73</h1>
       </div>
 
-      <!-- Кнопки-->
+      <!-- Кнопки -->
       <nav class="d-flex align-items-center az_nav_buttons ms-4">
         <a href="index.html" class="btn az_btn_menu me-2">Главная страница</a>
         <a href="sail.html" class="btn az_btn_menu me-2">Корзина</a>
@@ -143,9 +44,10 @@
     </div>
   </header>
 
-  <!-- Центр -->
+  <!-- лекарства -->
   <main class="flex-fill container py-4">
     <div class="meds-container">
+
       <div class="med-card">
         <img src="https://pro-zdorov.ru/wp-content/uploads/2021/09/uevaccij-300x140.jpg" alt="Парацетамол" />
         <div class="med-card-body">
@@ -189,7 +91,7 @@
         <img src="https://yandex-images.clstorage.net/9q8jYr349/d54121GTG/pLKdExOc-BK0KCUtlhpB2RH9BVyVJttiGG6JVLUV4O_jLfcud4WTaG2sKhoUdSrEQ5rsvnZriGYIU6Jl26BMk7m7sHYnxPkD7HFEAJZHLdwI0WwdzHOaYm0fyRDRBMieg1Xn2sf9V_TZCN72vNWqrFKfueNyGo13seeeDTu0bKokYhi-cpzoIgxMEUWXiuHVxEk17LUq1zfkYoXdSVX4LsdBU77rVWNEDWiKxmxRrpAWExGTh0b5YwmqknUD4FDC2GrAIh6w5JIMRLXF9x7xiTT5LVy11ndPOEolGRHhkLZz_ftG-61HLC04kkrofTpc0gOdt7MW0YdRsopR6yAUuuRSxGoeNPAuqLCldcumrcHQbWm4db6DK-z-qcGtuSQKhx1TMn_J91xt_MZe8PmKVMJ_4W9HggXz9YKm3QeYCPbU3lxeOpiUmqB0Mflfdj31-A1ZPAk612twzsFdtR0g7lvBkxJvRV_MadC-gjyhKiyyG2kvgzrl-426ohF3rNw2QK6QuoLgGNqEIMWNg5pZqQRRgZgJqpfTYD51ualBJO734Vse30GfNAGUkvacoYaY_rdpx1dq-edhXhZ176TIUswidBISxKx21CCBfQu-6aHMXQXo-T7zWzSWmcEhESS6G3WjMhvx49T94P7-GEVOzEqzFXvTNm0DLRaS7Vd0TC5I3lgipjTw-lC0Cc1van1lkPnRGG3mAz-YXiU9vbEk7k_1E5pj0ROsHewy3vTRIlxGcx2jTyqlQwGuftFDKKCyWLL8yp4oMNLYEPWpc5bZ9TzxSdwFJlezQHa9bcHNnPLzZcPin01HvM0YMvqk_YIQGo9hVzcu3cd5oo6Jj8xUytB-tJ56_LSu0HT9pTue8cEQDTng7aovO7iaEYGFtRBm053PAgPZV-zlHFJaBE0-RHarNcvHut2fYXpagedk4CasWgSibqzUAujsBaF_JkEJTFUl-Gn690ssRpVNgbWs" alt="Нурофен" />
         <div class="med-card-body">
           <h3 class="med-card-title">Нурофен</h3>
-          <p class="med-card-desc">Против зубной и головоной боли.</p>
+          <p class="med-card-desc">Против зубной и головной боли.</p>
           <div class="med-card-price">200 руб</div>
           <details class="azlab2_buy_wrapper">
             <summary class="azlab2_btn_buy">Купить</summary>
@@ -197,6 +99,7 @@
           </details>
         </div>
       </div>
+
     </div>
 
     <!-- товары -->
@@ -209,7 +112,7 @@
 
   <!-- ФУТЕР -->
   <footer class="az_ftr text-center py-3">
-    <p class="m-0">Наши контакты:</p>
+    <p class="m-0">Наши контакты: azarycheff@yandex.ru, ИС-З-23\2</p>
   </footer>
 
 </body>
