@@ -1,50 +1,52 @@
 .az_bdy {
   background-color: #E3F2FD;
 }
-.az_bdy {
-  background-color: #E3F2FD;
-}
 
 .az_hdr,
 .az_ftr {
   background-color: #A0C4DE;
 }
+
 .az_logo {
   height: 60px;
   width: auto;
   filter: invert(36%) sepia(86%) saturate(500%) hue-rotate(85deg) brightness(90%) contrast(90%);
 }
+
 .az_hdr_container {
-  padding-left: 8px;  
-  padding-right: 15px;/
+  padding-left: 8px;
+  padding-right: 15px;
 }
+
 .az_logo_text {
   font-family: 'Inknut Antiqua', serif;
   font-weight: 700;
   font-size: 1.5rem;
   line-height: 1.2;
 }
+
 .az_btn_menu {
-  background-color: #D3E8F8 !important; 
+  background-color: #D3E8F8 !important;
   color: #000;
   border: none;
   border-radius: 0;
   padding: 0.375rem 0.75rem;
   font-weight: 500;
-  box-shadow: 0 0 3px rgba(0,0,0,0.1);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
   transition: background-color 0.3s ease;
 }
 
 .az_btn_menu:hover,
 .az_btn_menu:focus {
-  background-color: #aacde9 !important; 
+  background-color: #aacde9 !important;
   color: #000;
   text-decoration: none;
 }
 
 .az_nav_buttons {
-  margin-left: 2rem; 
+  margin-left: 2rem;
 }
+
 .az_search_input {
   min-width: 200px;
   border-radius: 0.5rem 0 0 0.5rem;
@@ -65,6 +67,7 @@
   border-color: #66aee3;
   color: #000;
 }
+
 .az_slider {
   position: relative;
 }
@@ -110,18 +113,83 @@
 .az_slider_next {
   right: -1rem;
 }
-main.flex-fill.container.py-4 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-  min-height: 60vh;
-  padding-top: 0;
-  padding-bottom: 0;
+
+
+.azlab2_order-box,
+.azlab2_summary-box {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
 }
 
-.meds-container {
-  max-width: 900px;
+.azlab2_order-box h2,
+.azlab2_summary-box h2 {
+  margin-bottom: 0;
+}
+
+.azlab2_contact-form {
+  margin-top: 1rem;
+}
+
+.azlab2_contact-form .form-label {
+  font-weight: 600;
+}
+
+.azlab2_summary-box button {
   width: 100%;
+  font-weight: 600;
+}
+.az_slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.az_slider_wrapper {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  padding-bottom: 1rem;
+}
+
+.med-card {
+  min-width: 250px;
+  max-width: 250px;
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.az_slider_prev,
+.az_slider_next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #A0C4DE;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 10;
+  transition: background-color 0.3s ease;
+}
+
+.az_slider_prev:hover,
+.az_slider_next:hover {
+  background-color: #7baac5;
+}
+
+.az_slider_prev {
+  left: -0.5rem;
+}
+
+.az_slider_next {
+  right: -0.5rem;
 }
