@@ -37,10 +37,19 @@
 
       <!-- Поиск -->
       <div class="ms-auto me-3">
-        <form class="az_search_form d-flex" role="search">
-          <input class="form-control az_search_input" type="search" placeholder="Искать…" aria-label="Поиск" />
-          <button class="btn az_search_btn" type="submit">Поиск</button>
-        </form>
+        <form class="az_search_form d-flex" role="search" id="searchForm">
+  <input
+    class="form-control az_search_input"
+    type="text"
+    id="searchInput"
+    placeholder="Искать…"
+    aria-label="Поиск"
+    autocomplete="off"
+  />
+  <button class="btn az_search_btn" type="submit">Поиск</button>
+</form>
+</form>
+
       </div>
     </div>
   </header>
@@ -66,5 +75,8 @@
   <footer class="az_ftr text-center py-3">
     <p class="m-0">Наши контакты: azarycheff@yandex.ru, ИС-З-23\2</p>
   </footer>
+<script src="products.js"></script>
+<script src="search.js"></script>
+
 </body>
 </html>
