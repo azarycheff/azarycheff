@@ -225,12 +225,12 @@ details summary::marker {
 }
 
 .promo-block img {
-  width: 200px;
+  width: 100px;
   height: auto;
   border-radius: 10px;
   object-fit: cover;
   flex-shrink: 0;
-  max-width: 100%;
+  max-width: 500%;
 }
 
 .promo-text {
