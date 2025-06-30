@@ -103,6 +103,7 @@
   width: 100%;
   font-weight: 600;
 }
+
 .meds-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -111,7 +112,6 @@
   margin: 0 auto;
 }
 
-/* карточка лекарства */
 .med-card {
   background: white;
   border-radius: 8px;
@@ -163,7 +163,6 @@
   margin-bottom: 12px;
 }
 
-/* кнопка купить   */
 details.azlab2_buy_wrapper {
   user-select: none;
 }
@@ -194,13 +193,13 @@ details[open] > div.azlab2_buy_message {
   font-size: 14px;
 }
 
-/* убрать стрелочку у summary */
 details summary::-webkit-details-marker {
   display: none;
 }
 details summary::marker {
   content: "";
 }
+
 .promo-block {
   background-color: #BDBDBD;
   color: white;
@@ -211,6 +210,10 @@ details summary::marker {
   gap: 20px;
   max-width: 900px;
   margin: 40px auto;
+  box-sizing: border-box;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
 }
 
 .promo-block img {
@@ -219,11 +222,16 @@ details summary::marker {
   border-radius: 10px;
   object-fit: cover;
   flex-shrink: 0;
+  max-width: 100%;
 }
 
 .promo-text {
   flex-grow: 1;
   font-family: 'Inknut Antiqua', serif;
+  max-width: 100%;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
 }
 
 .promo-text h2 {
@@ -234,6 +242,10 @@ details summary::marker {
 .promo-text p {
   font-size: 1.1rem;
   margin-bottom: 20px;
+  max-width: 100%;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
 }
 
 .promo-btn {
@@ -247,6 +259,8 @@ details summary::marker {
   text-decoration: none;
   display: inline-block;
   transition: background-color 0.3s ease;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .promo-btn:hover {
@@ -273,3 +287,42 @@ details summary::marker {
 .suggestion-item:hover {
   background-color: #f0f0f0;
 }
+
+@media (max-width: 767.98px) {
+  .promo-block {
+    flex-direction: column;
+    padding: 20px;
+    margin: 20px 10px;
+  }
+
+  .promo-block img {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 15px;
+  }
+
+  .promo-text {
+    max-width: 100%;
+  }
+
+  .promo-text h2 {
+    font-size: 1.5rem;
+  }
+
+  .promo-text p {
+    font-size: 1rem;
+  }
+
+  .promo-btn {
+    width: 100%;
+    padding: 12px 0;
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .az_search_input {
+    min-width: 100px;
+  }
+}
+
